@@ -9,7 +9,7 @@ export const ButtonWrapper = styled.button`
     border: none;
     border-radius: 10px;
     font-weight: 400;
-    margin: 30px 0;
+    margin: 30px 20px;
 
     &:hover {
         box-shadow: 0 0 15px #00B4D8;

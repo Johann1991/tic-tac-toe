@@ -7,15 +7,18 @@ export const GameContextProvider = (props) => {
     board: [1, 2, 3, 4, 5, 6, 7, 8, 9],
     player1: {
       choice: "x",
-      name: "Johann"
+      name: "Johann",
+      score: 0,
     },
     player2: {
       choice: "o",
-      name: "Hayleigh"
+      name: "Hayleigh",
+      score: 0,
     },
     turn: "x"
 
   })
+
 
   const updateBoard = (index) => {
     let updatedBoard = game.board;
@@ -24,6 +27,13 @@ export const GameContextProvider = (props) => {
       ...game, 
       board: updatedBoard,
       turn: game.turn === "x" ? "o" : "x"
+    });
+  };
+
+  const resetBoard = () =>{
+    setGame({
+      ...game.board,
+      board: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     })
   }
   

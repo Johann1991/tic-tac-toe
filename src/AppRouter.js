@@ -6,6 +6,7 @@ import Game from './pages/Game/Game';
 import Header from './components/Header/Header';
 
 const AppRouter = () => {
+
   return (
     <Router>
       <Header />
@@ -16,6 +17,6 @@ const AppRouter = () => {
       </Routes>
     </Router>
   );
-}
+};
 
 export default AppRouter;
